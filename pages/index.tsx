@@ -51,7 +51,6 @@ const CtaContainer = styled.div`
 `;
 const RightBadgeWrapper = styled.div`
   margin-left: 16px;
-  transition: linear 0.5s;
 `;
 
 export default function Home() {
