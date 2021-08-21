@@ -35,9 +35,9 @@ const HeroTextContainer = styled.div`
   min-width: 300px;
 `;
 const HeroTitle = styled.h1`
-  margin: 0 0 24px 0;
-  line-height: 1.15;
   font-size: 4rem;
+  line-height: 1.15;
+  margin: 0 0 24px 0;
 `;
 const LottieContainer = styled.div`
   flex: 1;
