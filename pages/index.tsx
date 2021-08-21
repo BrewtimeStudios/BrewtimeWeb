@@ -1,9 +1,11 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Lottie from "react-lottie";
+import Image from "next/image";
 
 import * as colors from "../colors";
-import takeAwayMugLottie from "../assets/lotties/takeAwayMug.json";
+
+const takeAwayMugLottie = require("../public/lotties/takeAwayMug.json");
 
 const Container = styled.div`
   background-color: ${colors.whiteShadow};
@@ -42,18 +44,26 @@ const LottieContainer = styled.div`
   max-width: 450px;
   min-width: 320px;
 `;
-const CtaContainer = styled.div``;
-
-const lottieOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: takeAwayMugLottie,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
+const CtaContainer = styled.div`
+  align-items: center;
+  display: flex;
+  margin-top: 24px;
+`;
+const RightBadgeWrapper = styled.div`
+  margin-left: 16px;
+  transition: linear 0.5s;
+`;
 
 export default function Home() {
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: takeAwayMugLottie,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <Container>
       <Head>
@@ -75,13 +85,35 @@ export default function Home() {
               making you think about the key parameters that might impact your
               cup.
             </h3>
+            <CtaContainer>
+              <a href="https://www.apple.com" target="_blank" rel="noreferrer">
+                <Image
+                  src="/svgs/appStoreBadge.svg"
+                  height={60}
+                  width={150}
+                  alt="App Store Badge"
+                />
+              </a>
+              <RightBadgeWrapper>
+                <a
+                  href="https://www.play.google.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    src="/svgs/playStoreBadge.svg"
+                    height={60}
+                    width={150}
+                    alt="App Store Badge"
+                  />
+                </a>
+              </RightBadgeWrapper>
+            </CtaContainer>
           </HeroTextContainer>
           <LottieContainer>
             <Lottie options={lottieOptions} />
           </LottieContainer>
         </Hero>
-
-        <CtaContainer></CtaContainer>
       </Content>
     </Container>
   );
