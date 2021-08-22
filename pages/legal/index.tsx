@@ -100,7 +100,7 @@ export default function Legal() {
         <ListContainer>
           <h3>
             Before you look at the full fat legal documents that I bought using
-            a generator, here is an understandable list of what's going on
+            a generator, here is an understandable list of what&apos;s going on
           </h3>
           <ul>
             <Li>
@@ -123,8 +123,9 @@ export default function Legal() {
             </Li>
           </ul>
           <h3>
-            That's it! That's all we do and if there's any changes we will
-            update you so you can opt out or stop using the app/service.
+            That&apos;s it! That&apos;s all we do and if there&apos;s any
+            changes we will update you so you can opt out or stop using the
+            app/service.
           </h3>
         </ListContainer>
         <LinksContainer>

@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 type LayoutProps = {
-  children: ReactChildren;
+  children: any;
 };
 
 function Layout({ children }: LayoutProps) {
