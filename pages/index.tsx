@@ -1,45 +1,10 @@
 import Head from "next/head";
-import styled from "styled-components";
 import Lottie from "react-lottie";
 import Image from "next/image";
 
-import takeAwayMugLottie from "../public/lotties/takeAwayMug.json";
+import styles from "../styles/Home.module.scss";
 
-const Header = styled.header`
-  height: 10vh;
-`;
-const Hero = styled.div`
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-`;
-const HeroTextContainer = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  padding: 16px;
-  max-width: 450px;
-  min-width: 300px;
-`;
-const HeroTitle = styled.h1`
-  font-size: 4rem;
-  line-height: 1.15;
-  margin: 0 0 24px 0;
-`;
-const LottieContainer = styled.div`
-  flex: 1;
-  max-width: 450px;
-  min-width: 320px;
-`;
-const CtaContainer = styled.div`
-  align-items: center;
-  display: flex;
-  margin-top: 24px;
-`;
-/* const RightBadgeWrapper = styled.div`
-  margin-left: 16px;
-`; */
+import takeAwayMugLottie from "../public/lotties/takeAwayMug.json";
 
 export default function Home() {
   const lottieOptions = {
@@ -62,16 +27,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Hero>
-        <HeroTextContainer>
-          <HeroTitle>Brewtime.</HeroTitle>
+      <header className={styles.header} />
+      <div className={styles.hero}>
+        <div className={styles.heroTextContainer}>
+          <h1 className={styles.heroTitle}>Brewtime.</h1>
           <h3>
             Brewtime helps you be more mindful of how you brew your coffee by
             making you think about the key parameters that might impact your
             cup.
           </h3>
-          <CtaContainer>
+          <div className={styles.ctaContainer}>
             <a href="https://www.apple.com" target="_blank" rel="noreferrer">
               <Image
                 src="/svgs/appStoreBadge.svg"
@@ -80,26 +45,12 @@ export default function Home() {
                 alt="App Store Badge"
               />
             </a>
-            {/* <RightBadgeWrapper>
-                <a
-                  href="https://www.play.google.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    src="/svgs/playStoreBadge.svg"
-                    height={60}
-                    width={150}
-                    alt="App Store Badge"
-                  />
-                </a>
-              </RightBadgeWrapper> */}
-          </CtaContainer>
-        </HeroTextContainer>
-        <LottieContainer>
+          </div>
+        </div>
+        <div className={styles.lottieContainer}>
           <Lottie options={lottieOptions} />
-        </LottieContainer>
-      </Hero>
+        </div>
+      </div>
     </>
   );
 }

@@ -1,0 +1,68 @@
+@import "variables";
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 450px;
+  min-width: 300px;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  line-height: 1.15;
+  margin: 0 0 24px 0;
+}
+
+.lottieContainer {
+  flex: 1;
+  max-width: 450px;
+  min-width: 320px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listContainer {
+  flex: 2;
+  padding: 0 16px 0 0;
+  justify-content: space-between;
+  max-width: 450px;
+  min-width: 320px;
+}
+
+.li {
+  margin-bottom: 16px;
+}
+
+.linksContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 16px 0 32px;
+
+  max-width: 450px;
+  min-width: 320px;
+}
+
+.linkButton {
+  align-items: center;
+  background-color: $brown;
+  color: $white;
+  border-radius: 20px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 200px;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
