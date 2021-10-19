@@ -1,7 +1,5 @@
-import styled from "styled-components";
+import styles from "./Header.module.scss";
 
-const Header = styled.div`
-  height: 10vh;
-`;
+const Header = () => <div className={styles.header} />;
 
 export default Header;
