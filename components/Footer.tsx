@@ -1,7 +1,5 @@
-import styled from "styled-components";
+import styles from "./Footer.module.scss";
 
-const Footer = styled.div`
-  height: 20vh;
-`;
+const Footer = () => <div className={styles.footer} />;
 
 export default Footer;

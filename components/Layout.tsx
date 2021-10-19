@@ -1,15 +1,7 @@
-import { ReactChildren } from "react";
-import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 0 0.5rem;
-  max-width: 960px;
-  margin: auto;
-`;
+import styles from "./Layout.module.scss";
 
 type LayoutProps = {
   children: any;
@@ -17,11 +9,11 @@ type LayoutProps = {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <Container>
+    <div className={styles.container}>
       <Header />
       {children}
       <Footer />
-    </Container>
+    </div>
   );
 }
 
