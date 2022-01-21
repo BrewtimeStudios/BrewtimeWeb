@@ -1,7 +1,9 @@
 .container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 0.5rem;
-  max-width: 960px;
-  margin: auto;
+}
+
+.content {
+  width: 960px;
 }

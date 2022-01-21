@@ -1,17 +1,20 @@
-import Header from "./Header";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 import styles from "../styles/Layout.module.scss";
+import { ReactChild, ReactChildren } from "react";
 
 type LayoutProps = {
-  children: any;
+  children: ReactChild | ReactChildren;
 };
 
 function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
-      <Header />
-      {children}
+      <div className={styles.content}>
+        <NavBar />
+        {children}
+      </div>
       <Footer />
     </div>
   );
