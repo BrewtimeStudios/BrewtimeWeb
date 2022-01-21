@@ -2,10 +2,9 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 import styles from "../styles/Layout.module.scss";
-import { ReactChild, ReactChildren } from "react";
 
 type LayoutProps = {
-  children: ReactChild | ReactChildren;
+  children: any;
 };
 
 function Layout({ children }: LayoutProps) {

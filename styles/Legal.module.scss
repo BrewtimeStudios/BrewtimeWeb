@@ -1,32 +1,9 @@
 @import "variables";
 
-.hero {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap-reverse;
-}
-
-.textContainer {
-  flex: 1;
-  max-width: 450px;
-  min-width: 300px;
-}
-
-.heroTitle {
-  font-size: 4rem;
-  line-height: 1.15;
-  margin: 0 0 24px 0;
-}
-
-.lottieContainer {
-  flex: 1;
-  max-width: 450px;
-  min-width: 320px;
-}
-
 .section {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 6rem;
 }
 
 .listContainer {

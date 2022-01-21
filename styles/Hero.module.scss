@@ -1,7 +1,10 @@
+@import "variables";
+
 .hero {
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 .heroTextContainer {
@@ -14,8 +17,16 @@
 }
 
 .heroTitle {
-  font-size: 4rem;
+  color: $offBlack;
+  font-size: 6rem;
   line-height: 1.15;
+  margin: 0;
+}
+
+.heroSubtitle {
+  color: $offBlack;
+  font-size: 1.3rem;
+  margin-top: 2.8rem;
 }
 
 .lottieContainer {
@@ -23,10 +34,4 @@
   height: 350px;
   max-width: 450px;
   min-width: 320px;
-}
-
-.ctaContainer {
-  align-items: center;
-  display: flex;
-  margin-top: 24px;
 }
