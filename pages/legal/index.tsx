@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Layout from "../../components/Layout";
-import LegalHero from "../../components/LegalHero";
 import LegalPageContent from "../../content/LegalPageContent";
 
 import styles from "../../styles/Legal.module.scss";
