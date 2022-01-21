@@ -1,4 +1,4 @@
-import Header from "./Header";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 import styles from "../styles/Layout.module.scss";
@@ -10,8 +10,10 @@ type LayoutProps = {
 function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
-      <Header />
-      {children}
+      <div className={styles.content}>
+        <NavBar />
+        {children}
+      </div>
       <Footer />
     </div>
   );
