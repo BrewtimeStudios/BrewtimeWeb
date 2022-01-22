@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import styles from "../styles/NavBar.module.scss";
-import Button from "./Button";
 
 const NavBar = () => {
   return (
@@ -22,9 +21,15 @@ const NavBar = () => {
             <a>Legal</a>
           </Link>
         </div>
-        <div className={styles.linksText}>
+        <div
+          className={[
+            styles.linksText,
+            styles.linksButton,
+            styles.brownBlueShadow,
+          ].join(" ")}
+        >
           <Link href="/support-project">
-            <a>Support us!</a>
+            <a>Support 🤍</a>
           </Link>
         </div>
       </div>

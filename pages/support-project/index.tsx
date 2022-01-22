@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LegalPageContent from "../../content/LegalPageContent";
+import SupportProjectPageContent from "../../content/SupportProjectPageContent";
 
 export default function SupportProject() {
   return (
@@ -15,7 +15,7 @@ export default function SupportProject() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <LegalPageContent />
+      <SupportProjectPageContent />
     </>
   );
 }

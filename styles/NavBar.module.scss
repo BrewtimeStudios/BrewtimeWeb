@@ -28,11 +28,35 @@
 
 .linksText {
   color: $offBlack;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-right: 32px;
 
   &:hover {
     color: $blue;
+  }
+}
+
+.linksButton {
+  background-color: $brown;
+  padding: 16px;
+  border-radius: 20px;
+  color: $whiteShadow;
+
+  &:hover {
+    background-color: $blue;
+    color: $offWhite;
+  }
+}
+
+.brownBlueShadow {
+  box-shadow: 9px 10px 11px -2px rgba(163, 89, 64, 0.36);
+  -webkit-box-shadow: 9px 10px 11px -2px rgba(163, 89, 64, 0.36);
+  -moz-box-shadow: 9px 10px 11px -2px rgba(163, 89, 64, 0.36);
+
+  &:hover {
+    box-shadow: 9px 10px 11px -2px rgba(30, 150, 252, 0.36);
+    -webkit-box-shadow: 9px 10px 11px -2px rgba(30, 150, 252, 0.36);
+    -moz-box-shadow: 9px 10px 11px -2px rgba(30, 150, 252, 0.36);
   }
 }
