@@ -9,18 +9,30 @@
 }
 
 .linksContainer {
+  align-items: center;
   display: flex;
 }
 
 .logo {
+  color: $brown;
   font-size: 2rem;
   font-weight: 800;
-  color: $brown;
+
+  &:hover {
+    color: $blue;
+    border-bottom: solid;
+    border-bottom-color: $offBlack;
+    border-bottom-width: 5px;
+  }
 }
 
 .linksText {
   color: $offBlack;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin-right: 32px;
+
+  &:hover {
+    color: $blue;
+  }
 }
