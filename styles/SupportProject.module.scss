@@ -4,22 +4,27 @@
   height: 10rem;
 }
 .section {
+  align-items: center;
   background-color: $brown;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .sectionLeft {
   max-width: 350px;
 }
 
-.bmcSectionTitle {
+.sectionTitle {
   color: $offWhite;
 }
 
-.bmcSectionSubtitle {
+.sectionSubtitle {
   color: $whiteShadow;
+}
+
+.footerMargin {
+  height: 5rem;
 }

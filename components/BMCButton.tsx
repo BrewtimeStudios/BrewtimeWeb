@@ -7,6 +7,7 @@ function BMCButton(): ReactElement {
   return (
     <a
       className={styles.base}
+      // replace with your own account
       href="https://www.buymeacoffee.com/ugglr"
       target="_blank"
       rel="noreferrer"
