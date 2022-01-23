@@ -1,0 +1,30 @@
+@import "variables";
+
+.heroMargin {
+  height: 10rem;
+}
+.section {
+  align-items: center;
+  background-color: $brown;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+
+.sectionLeft {
+  max-width: 350px;
+}
+
+.sectionTitle {
+  color: $offWhite;
+}
+
+.sectionSubtitle {
+  color: $whiteShadow;
+}
+
+.footerMargin {
+  height: 5rem;
+}

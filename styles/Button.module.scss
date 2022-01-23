@@ -1,0 +1,12 @@
+@import "variables";
+
+.base {
+  background-color: $brown;
+  border: none;
+  border-radius: 20px;
+  color: $offWhite;
+  font-size: 1.5rem;
+  padding: 16px;
+  cursor: pointer;
+  min-width: 80px;
+}
