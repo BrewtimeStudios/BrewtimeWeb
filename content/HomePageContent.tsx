@@ -17,7 +17,11 @@ function HomePageContent() {
 
   const CtaSection = (): ReactElement => (
     <div className={styles.ctaContainer}>
-      <a href="https://www.apple.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://apps.apple.com/us/app/brewtime-track-your-coffee/id1617402319"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Image
           src="/svgs/appStoreBadge.svg"
           height={60}
