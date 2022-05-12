@@ -10,10 +10,8 @@ type LayoutProps = {
 function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
-        <NavBar />
-        {children}
-      </div>
+      <NavBar />
+      <div className={styles.content}>{children}</div>
       <Footer />
     </div>
   );

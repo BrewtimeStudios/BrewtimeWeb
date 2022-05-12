@@ -37,7 +37,9 @@ function SupportProjectPageContent(): ReactElement {
               means, I can write more code!
             </h3>
           </div>
-          <BMCButton />
+          <div className={styles.sectionRight}>
+            <BMCButton />
+          </div>
         </div>
       </section>
 
@@ -51,10 +53,15 @@ function SupportProjectPageContent(): ReactElement {
               a better understanding of what is working or not working.
             </h3>
           </div>
-          <a href="mailto:brewtimeapp@gmail.com" className={buttonStyles.base}>
-            <div className={buttonStyles.text}>♥️</div>
-            <div className={buttonStyles.text}>Send Feedback!</div>
-          </a>
+          <div className={styles.sectionRight}>
+            <a
+              href="mailto:brewtimeapp@gmail.com"
+              className={buttonStyles.base}
+            >
+              <div className={buttonStyles.text}>♥️</div>
+              <div className={buttonStyles.text}>Send Feedback!</div>
+            </a>
+          </div>
         </div>
       </section>
 

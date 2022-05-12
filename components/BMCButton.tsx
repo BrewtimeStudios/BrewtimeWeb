@@ -14,8 +14,8 @@ function BMCButton(): ReactElement {
     >
       <Image
         className={styles.image}
-        width={80}
-        height={80}
+        width={40}
+        height={40}
         src="/svgs/bmc-new-btn-logo.svg"
         alt="buymecofee"
       />
