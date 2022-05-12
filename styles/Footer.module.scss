@@ -4,15 +4,24 @@
   background-color: $brown;
   border-radius: 20px 20px 0 0;
   display: flex;
-  justify-content: center;
+  padding: 0 20px;
   width: 80vw;
-}
-
-.content {
-  width: 960px;
 }
 
 .title {
   color: $whiteShadow;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 95vw;
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }

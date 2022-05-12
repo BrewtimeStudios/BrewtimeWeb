@@ -1,6 +1,7 @@
 @import "variables";
 
 .hero {
+  align-items: center;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -35,4 +36,23 @@
   max-width: 450px;
   min-width: 320px;
   overflow: visible;
+}
+
+@media only screen and (max-width: 960px) {
+  .heroTextContainer {
+    flex: 2;
+  }
+  .heroTitle {
+    font-size: 5.3rem;
+  }
+  .heroSubtitle {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heroTitle {
+    font-size: 4.2rem;
+  }
 }

@@ -20,3 +20,15 @@
   font-weight: 600;
   margin-left: 24px;
 }
+
+@media only screen and (max-width: 960px) {
+  .base {
+    padding: 12px;
+  }
+  .image {
+    height: 1rem;
+  }
+  .text {
+    font-size: 1.1rem;
+  }
+}
