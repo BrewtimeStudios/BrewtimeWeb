@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from "../styles/NavBar.module.scss";
+import styles from "./NavBar.module.scss";
 
 const NavBar = () => {
   return (
@@ -11,16 +11,6 @@ const NavBar = () => {
         </Link>
       </div>
       <div className={styles.linksContainer}>
-        <div className={styles.linksText}>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </div>
-        <div className={styles.linksText}>
-          <Link href="/legal">
-            <a>Legal</a>
-          </Link>
-        </div>
         <div
           className={[
             styles.linksText,

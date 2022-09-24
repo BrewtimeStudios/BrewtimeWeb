@@ -1,18 +1,23 @@
 .container {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  min-height: 100vh;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .content {
+  min-height: 80vh;
   width: 80vw;
 }
 
 @media only screen and (max-width: 960px) {
   .content {
     width: 95vw;
-    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content {
+    min-height: 90vh;
   }
 }

@@ -3,7 +3,7 @@ import BMCButton from "../components/BMCButton";
 import Hero from "../components/Hero";
 
 import styles from "../styles/SupportProject.module.scss";
-import buttonStyles from "../styles/BMCButton.module.scss";
+import buttonStyles from "../components/BMCButton.module.scss";
 import rocketLottie from "../public/lotties/rocket_brown.json";
 
 function SupportProjectPageContent(): ReactElement {

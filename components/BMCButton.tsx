@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import Image from "next/image";
 
-import styles from "../styles/BMCButton.module.scss";
+import styles from "./BMCButton.module.scss";
 
 function BMCButton(): ReactElement {
   return (

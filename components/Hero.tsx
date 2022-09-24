@@ -1,7 +1,7 @@
 import { ReactChild, ReactChildren, ReactElement } from "react";
 import Lottie, { Options as LottieAnimationOptions } from "react-lottie";
 
-import styles from "../styles/Hero.module.scss";
+import styles from "./Hero.module.scss";
 
 type Props = {
   title: String;
