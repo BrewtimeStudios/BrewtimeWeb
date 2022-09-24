@@ -1,5 +1,5 @@
 import Head from "next/head";
-import HomePageContent from "../content/HomePageContent";
+import HomePageContent from "../content/home/HomePageContent";
 
 export default function Home() {
   return (

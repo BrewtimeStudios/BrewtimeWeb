@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
-import Hero from "../components/Hero";
+import Hero from "../../components/Hero";
 
-import styles from "../styles/Legal.module.scss";
-import coffeAndBiscuitLottie from "../public/lotties/coffeeAndBiscuit.json";
+import styles from "../../styles/Legal.module.scss";
+import coffeAndBiscuitLottie from "../../public/lotties/coffeeAndBiscuit.json";
 
 function LegalPageContent(): ReactElement {
   const lottieOptions = {

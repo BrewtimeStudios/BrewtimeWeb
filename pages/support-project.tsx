@@ -1,5 +1,5 @@
 import Head from "next/head";
-import SupportProjectPageContent from "../../content/SupportProjectPageContent";
+import SupportProjectPageContent from "../content/support/SupportProjectPageContent";
 
 export default function SupportProject() {
   return (
