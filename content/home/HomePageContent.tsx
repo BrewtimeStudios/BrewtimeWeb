@@ -46,9 +46,11 @@ function HomePageContent() {
         <CtaSection />
       </Hero>
 
-      <div style={{ height: "10vh" }} />
+      <div style={{ height: "13vh" }} />
 
       <Features />
+
+      <div style={{ height: "10vh" }} />
     </>
   );
 }
