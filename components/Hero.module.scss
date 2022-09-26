@@ -1,11 +1,12 @@
-@import "variables";
+@import "../styles/variables";
 
 .hero {
   align-items: center;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin: auto;
+  max-width: 60vw;
 }
 
 .heroTextContainer {
@@ -39,6 +40,9 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .hero {
+    max-width: 80vw;
+  }
   .heroTextContainer {
     flex: 2;
   }
@@ -52,7 +56,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .hero {
+    max-width: 100vw;
+  }
   .heroTitle {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 }

@@ -2,22 +2,23 @@
 
 URL: https://www.brewtime.app/
 
-Coming to an appstore soon!
+In the appstore right now!
 
 Feature list
+
 - [x] Main landing
 - [x] Legal page
 - [x] Support Project page
-- [ ] Make responsive 
+- [x] Make responsive
 
 Tech:
+
 - Next.js
 - Typescript
 - CSS modules
 - Lottie animations
 
 <hr />
-
 
 ## Getting Started
 

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LegalPageContent from "../../content/LegalPageContent";
+import LegalPageContent from "../content/legal/LegalPageContent";
 
 export default function Legal() {
   return (
